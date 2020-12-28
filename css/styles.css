@@ -3,6 +3,7 @@
     padding:0;
     box-sizing:border-box;
 }
+
 body {
     font-family: "Ubuntu";
     min-height: 100vh;
@@ -15,17 +16,17 @@ body {
     background-position: center bottom;
     background-repeat: no-repeat;
 }
+
 h2{
   font-family: "Italianno";
   font-size: 2.5rem;
+}
+
+h2, h4{
   color: #fff76a;
 }
-h4{
-  color: #fff76a;
-}
-img {
-    width: 100%;
-}
+
+/********************** card section ***************************/
 
 .card {
     position: relative;
@@ -38,6 +39,7 @@ img {
     box-shadow: 2px 2px 5px rgba(0,0,0,0.3);
     text-align: center;
 }
+
 .card::before {
     content: "";
     position: absolute;
@@ -53,28 +55,16 @@ img {
     transform-origin: bottom;
     transform: scaleY(0);
 }
+
 .card:hover::before {
     transform: scaleY(1);
 }
-.cap {
-    position: absolute;
-    top: -90px;
-    left: -90px;
-    z-index: 3;
-    width: 250%;
-}
-.cap2{
-  position: absolute;
-  top: -140px;
-  right: 80px;
-  z-index: 3;
-  width: 180%;
-}
 
 .card__content {
-    color: #FFF;
+    color: #fff;
     padding-bottom: 10px;
 }
+
 .card__content p {
     margin: 10px 0 20px;
     font-weight: 400;
@@ -82,6 +72,7 @@ img {
     line-height: 1.4rem;
     color: #f5f4f4;
 }
+
 .card button {
     display: inline-block;
     outline: none;
@@ -95,7 +86,8 @@ img {
     font-family: "Ubuntu";
     font-weight: 400;
 }
+
 .card button:hover {
     background: #fff76a;
-    color: #ff1717;
+    color: #52057b;
 }

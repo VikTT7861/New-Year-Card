@@ -15,17 +15,59 @@ body {
     background-position: center bottom;
     background-repeat: no-repeat;
 }
-img {
-    width: 100%;
-}
+
 .content{
   padding: 12% 15% 2%;
 }
 
+/********************** name section ***************************/
+
+.jaz{
+  width: 40%;
+  position: relative;
+  right: 10px;
+  top: 3px;
+}
+
+/********************** icon section ***************************/
+
+.face{
+  float: right;
+  position: relative;
+  right: 65px;
+  bottom: 3px;
+}
+
+.icon{
+  float: right;
+  position: relative;
+  bottom: 20px;
+  right:105px;
+}
+
+/********************** top images section ***************************/
+
+.cap {
+    position: absolute;
+    top: -120px;
+    left: 95px;
+    z-index: 3;
+    width: 140%;
+}
+.cap2{
+  position: absolute;
+  top: -140px;
+  right: 80px;
+  z-index: 3;
+  width: 180%;
+}
+
+/********************** card section ***************************/
 .card {
     position: relative;
     width: 100%;
     max-width: 340px;
+    padding-bottom: 1px;
     padding: 1.3rem;
     background: rgba(74,112,255,0.3);
     backdrop-filter: blur(5px);
@@ -33,6 +75,7 @@ img {
     box-shadow: 2px 2px 5px rgba(74,112,255,0.3);
     text-align: center;
 }
+
 .card::before {
     content: "";
     position: absolute;
@@ -48,9 +91,11 @@ img {
     transform-origin: bottom;
     transform: scaleY(0);
 }
+
 .card:hover::before {
     transform: scaleY(1);
 }
+
 .card__img {
     position: relative;
     height: 120px;
@@ -58,56 +103,18 @@ img {
     border-radius: 50%;
     margin: -75px auto 10px;
 }
+
 .card__profile {
     height: 120px;
     width: 120px;
     border-radius: 50%;
     overflow: hidden;
 }
-.jaz{
-  width: 40%;
-  position: relative;
-  right: 10px;
-  top: 3px;
-}
-.face{
-  float: right;
-  position: relative;
-  right: 65px;
-  bottom: 5px;
-}
-.icon{
-  float: right;
-  position: relative;
-  bottom: 20px;
-  right: 95px;
-}
-.content .fa-smile-beam{
-  color: #fdb827;
-}
-.content .fa-heart{
-  color: #fa1616;
-}
-.cap {
-    position: absolute;
-    top: -120px;
-    left: 95px;
-    z-index: 3;
-    width: 140%;
-}
-.cap2{
-  position: absolute;
-  top: -140px;
-  right: 80px;
-  z-index: 3;
-  width: 180%;
-}
-.card{
-  padding-bottom: 1px;
-}
+
 .card__content {
-    color: #FFF;
+    color: #fff;
 }
+
 .card__content p {
     margin: 10px 0 20px;
     font-weight: 400;
@@ -116,12 +123,15 @@ img {
     color: #f5f4f4;
     text-align: left;
 }
+
 .card__content .end-message{
   position: relative;
   bottom: 20px;
   text-align: center;
   color: #fff76a;
 }
+
+/********************** responsive media section ***************************/
 
 @media (max-width: 1071px) {
   .cap {
