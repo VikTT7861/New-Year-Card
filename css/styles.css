@@ -1,0 +1,101 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+body {
+    font-family: "Ubuntu";
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1.5rem;
+    background-image:url("https://www.pexels.com/photo/752484/download/?search_query=christmas%20lights&tracking_id=914144ag35b");
+    background-size: cover;
+    background-position: center bottom;
+    background-repeat: no-repeat;
+}
+h2{
+  font-family: "Italianno";
+  font-size: 2.5rem;
+  color: #fff76a;
+}
+h4{
+  color: #fff76a;
+}
+img {
+    width: 100%;
+}
+
+.card {
+    position: relative;
+    width: 100%;
+    max-width: 340px;
+    padding: 1.3rem;
+    background: rgba(255,255,255,0.2);
+    backdrop-filter: blur(5px);
+    border-radius: 0.7rem;
+    box-shadow: 2px 2px 5px rgba(0,0,0,0.3);
+    text-align: center;
+}
+.card::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: rgba(74,112,255,0.3);
+    backdrop-filter: blur(5px);
+    transition: 800ms ease;
+    z-index: -1;
+    border-radius: 0.7rem;
+    transform-origin: bottom;
+    transform: scaleY(0);
+}
+.card:hover::before {
+    transform: scaleY(1);
+}
+.cap {
+    position: absolute;
+    top: -90px;
+    left: -90px;
+    z-index: 3;
+    width: 250%;
+}
+.cap2{
+  position: absolute;
+  top: -140px;
+  right: 80px;
+  z-index: 3;
+  width: 180%;
+}
+
+.card__content {
+    color: #FFF;
+    padding-bottom: 10px;
+}
+.card__content p {
+    margin: 10px 0 20px;
+    font-weight: 400;
+    user-select: none;
+    line-height: 1.4rem;
+    color: #f5f4f4;
+}
+.card button {
+    display: inline-block;
+    outline: none;
+    border: none;
+    padding: 10px 25px;
+    color: #fff76a;
+    background-color: #52057b;
+    border-radius: 1.3rem;
+    font-size: 1rem;
+    transition: 300ms ease;
+    font-family: "Ubuntu";
+    font-weight: 400;
+}
+.card button:hover {
+    background: #fff76a;
+    color: #ff1717;
+}

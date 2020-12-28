@@ -1,0 +1,364 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+body {
+    font-family: "Ubuntu";
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1.5rem;
+    background-image:url("https://media.giphy.com/media/26tOZ42Mg6pbTUPHW/giphy.gif");
+    background-size: cover;
+    background-position: center bottom;
+    background-repeat: no-repeat;
+}
+img {
+    width: 100%;
+}
+.content{
+  padding: 12% 15% 2%;
+}
+
+.card {
+    position: relative;
+    width: 100%;
+    max-width: 340px;
+    padding: 1.3rem;
+    background: rgba(74,112,255,0.3);
+    backdrop-filter: blur(5px);
+    border-radius: 0.7rem;
+    box-shadow: 2px 2px 5px rgba(74,112,255,0.3);
+    text-align: center;
+}
+.card::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: rgba(74,112,255,0.3);
+    backdrop-filter: blur(5px);
+    transition: 800ms ease;
+    z-index: -1;
+    border-radius: 0.7rem;
+    transform-origin: bottom;
+    transform: scaleY(0);
+}
+.card:hover::before {
+    transform: scaleY(1);
+}
+.card__img {
+    position: relative;
+    height: 120px;
+:;    width: 120px;
+    border-radius: 50%;
+    margin: -75px auto 10px;
+}
+.card__profile {
+    height: 120px;
+    width: 120px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+.jaz{
+  width: 40%;
+  position: relative;
+  right: 10px;
+  top: 3px;
+}
+.face{
+  float: right;
+  position: relative;
+  right: 65px;
+  bottom: 5px;
+}
+.icon{
+  float: right;
+  position: relative;
+  bottom: 20px;
+  right: 95px;
+}
+.content .fa-smile-beam{
+  color: #fdb827;
+}
+.content .fa-heart{
+  color: #fa1616;
+}
+.cap {
+    position: absolute;
+    top: -120px;
+    left: 95px;
+    z-index: 3;
+    width: 140%;
+}
+.cap2{
+  position: absolute;
+  top: -140px;
+  right: 80px;
+  z-index: 3;
+  width: 180%;
+}
+.card{
+  padding-bottom: 1px;
+}
+.card__content {
+    color: #FFF;
+}
+.card__content p {
+    margin: 10px 0 20px;
+    font-weight: 400;
+    user-select: none;
+    line-height: 1.4rem;
+    color: #f5f4f4;
+    text-align: left;
+}
+.card__content .end-message{
+  position: relative;
+  bottom: 20px;
+  text-align: center;
+  color: #fff76a;
+}
+
+@media (max-width: 1071px) {
+  .cap {
+      position: absolute;
+      top: -70px;
+      left: 120px;
+      z-index: 3;
+      width: 120%;
+  }
+  .cap2{
+    position: absolute;
+    top: -80px;
+    right: 100px;
+    z-index: 3;
+    width: 140%;
+  }
+}
+
+@media (max-width: 890px) {
+  .cap {
+      position: absolute;
+      top: -60px;
+      left: 120px;
+      z-index: 3;
+      width: 100%;
+  }
+  .cap2{
+    position: absolute;
+    top: -70px;
+    right: 100px;
+    z-index: 3;
+    width: 120%;
+  }
+}
+
+@media (max-width: 700px) {
+  .cap {
+      position: absolute;
+      top: -40px;
+      left: 120px;
+      z-index: 3;
+      width: 100%;
+  }
+  .cap2{
+    position: absolute;
+    top: -50px;
+    right: 100px;
+    z-index: 3;
+    width: 120%;
+  }
+}
+
+@media (max-width: 541px) {
+  .cap {
+      position: absolute;
+      top: -25px;
+      left: 120px;
+      z-index: 3;
+      width: 100%;
+  }
+  .cap2{
+    position: absolute;
+    top: -30px;
+    right: 100px;
+    z-index: 3;
+    width: 120%;
+  }
+  .jaz{
+    width: 45%;
+    position: relative;
+    right: 10px;
+    top: 3px;
+  }
+  .face{
+    float: right;
+    position: relative;
+    right: 50px;
+    bottom: 5px;
+  }
+  .icon{
+    float: right;
+    position: relative;
+    bottom: 20px;
+    right: 93px;
+  }
+}
+
+@media (max-width: 490px){
+  .jaz{
+    width: 50%;
+    position: relative;
+    right: 10px;
+    top: 3px;
+  }
+  .face{
+    float: right;
+    position: relative;
+    right: 30px;
+    bottom: 7px;
+  }
+  .icon{
+    float: right;
+    position: relative;
+    bottom: 20px;
+    right: 75px;
+  }
+}
+
+@media (max-width: 415px){
+  .card__profile {
+    position: relative;
+    left: 12px;
+      height: 100px;
+      width: 100px;
+      border-radius: 50%;
+      overflow: hidden;
+  }
+  .jaz{
+    width: 60%;
+    position: relative;
+    right: 10px;
+    top: 3px;
+  }
+  .face{
+    float: right;
+    position: relative;
+    right: 15px;
+    bottom: 8px;
+  }
+  .icon{
+    float: right;
+    position: relative;
+    bottom: 20px;
+    right: 50px;
+  }
+}
+
+@media (max-width: 376px){
+  .card__profile {
+    position: relative;
+    left: 12px;
+      height: 100px;
+      width: 100px;
+      border-radius: 50%;
+      overflow: hidden;
+  }
+  .cap {
+      position: absolute;
+      top: -5px;
+      left: 120px;
+      z-index: 3;
+      width: 70%;
+  }
+  .cap2{
+    position: absolute;
+    top: -15px;
+    right: 100px;
+    z-index: 3;
+    width:90%;
+  }
+  .jaz{
+    width: 62%;
+    position: relative;
+    right: 10px;
+    top: 3px;
+  }
+  .face{
+    float: right;
+    position: relative;
+    right: 10px;
+    bottom: 10px;
+  }
+  .icon{
+    float: right;
+    position: relative;
+    bottom: 20px;
+    right: 47px;
+  }
+}
+
+@media (max-width: 361px){
+  .card__profile {
+    position: relative;
+    left: 20px;
+      height: 85px;
+      width: 85px;
+      border-radius: 50%;
+      overflow: hidden;
+  }
+}
+
+@media (max-width: 321px){
+  .card__profile {
+    position: relative;
+    left: 20px;
+      height: 85px;
+      width: 85px;
+      border-radius: 50%;
+      overflow: hidden;
+  }
+  .jaz{
+    width: 60%;
+    position: relative;
+    right: 10px;
+    top: 3px;
+  }
+  .face{
+    float: right;
+    position: relative;
+    right: 5px;
+    bottom: 10px;
+  }
+  .icon{
+    float: right;
+    position: relative;
+    bottom: 20px;
+    right: 25px;
+  }
+}
+
+@media (max-width: 300px){
+  .jaz{
+    width: 60%;
+    position: relative;
+    right: 10px;
+    top: 3px;
+  }
+  .face{
+    float: right;
+    position: relative;
+    right: 5px;
+    bottom: -5px;
+  }
+  .icon{
+    float: right;
+    position: relative;
+    bottom: 20px;
+    right: 15px;
+  }
+}
