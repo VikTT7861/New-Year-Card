@@ -200,7 +200,7 @@ body {
     width: 120%;
   }
   .jaz{
-    width: 45%;
+    width: 40%;
     position: relative;
     right: 10px;
     top: 3px;
@@ -208,14 +208,14 @@ body {
   .face{
     float: right;
     position: relative;
-    right: 50px;
+    right: 60px;
     bottom: 5px;
   }
   .icon{
     float: right;
     position: relative;
     bottom: 20px;
-    right: 93px;
+    right: 108px;
   }
 }
 
@@ -250,7 +250,7 @@ body {
       overflow: hidden;
   }
   .jaz{
-    width: 60%;
+    width: 55%;
     position: relative;
     right: 10px;
     top: 3px;
@@ -259,13 +259,13 @@ body {
     float: right;
     position: relative;
     right: 15px;
-    bottom: 8px;
+    bottom: 3px;
   }
   .icon{
     float: right;
     position: relative;
     bottom: 20px;
-    right: 50px;
+    right: 65px;
   }
 }
 
@@ -293,7 +293,7 @@ body {
     width:90%;
   }
   .jaz{
-    width: 62%;
+    width: 60%;
     position: relative;
     right: 10px;
     top: 3px;
@@ -302,13 +302,13 @@ body {
     float: right;
     position: relative;
     right: 10px;
-    bottom: 10px;
+    bottom: 5px;
   }
   .icon{
     float: right;
     position: relative;
     bottom: 20px;
-    right: 47px;
+    right: 52px;
   }
 }
 
@@ -320,6 +320,12 @@ body {
       width: 85px;
       border-radius: 50%;
       overflow: hidden;
+  }
+  .icon{
+    float: right;
+    position: relative;
+    bottom: 20px;
+    right: 48px;
   }
 }
 
@@ -348,13 +354,13 @@ body {
     float: right;
     position: relative;
     bottom: 20px;
-    right: 25px;
+    right: 40px;
   }
 }
 
 @media (max-width: 300px){
   .jaz{
-    width: 60%;
+    width: 63%;
     position: relative;
     right: 10px;
     top: 3px;
@@ -363,12 +369,12 @@ body {
     float: right;
     position: relative;
     right: 5px;
-    bottom: -5px;
+    bottom: 10px;
   }
   .icon{
     float: right;
     position: relative;
     bottom: 20px;
-    right: 15px;
+    right: 25px;
   }
 }
