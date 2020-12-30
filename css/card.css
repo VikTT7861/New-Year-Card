@@ -131,6 +131,42 @@ body {
   color: #fff76a;
 }
 
+/********************** song section ***************************/
+
+.song{
+  box-sizing: content-box;
+  position: relative;
+  width: 87%;
+  max-width: 340px;
+  padding-bottom: 1px;
+  padding: 1.3rem;
+  background: rgba(74,112,255,0.3);
+  backdrop-filter: blur(5px);
+  border-radius: 0.7rem;
+  box-shadow: 2px 2px 5px rgba(74,112,255,0.3);
+  text-align: center;
+}
+
+.song::before{
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: rgba(74,112,255,0.3);
+  backdrop-filter: blur(5px);
+  transition: 800ms ease;
+  z-index: -1;
+  border-radius: 0.7rem;
+  transform-origin: left;
+  transform: scaleX(0);
+}
+
+.song:hover::before{
+  transform: scaleX(1);
+}
+
 /********************** responsive media section ***************************/
 
 @media (max-width: 1071px) {
@@ -209,8 +245,17 @@ body {
     float: right;
     position: relative;
     right: 60px;
-    bottom: 5px;
+    bottom: 3px;
   }
+  .icon{
+    float: right;
+    position: relative;
+    bottom: 20px;
+    right: 108px;
+  }
+}
+
+@media (max-width: 515px){
   .icon{
     float: right;
     position: relative;
@@ -229,14 +274,14 @@ body {
   .face{
     float: right;
     position: relative;
-    right: 30px;
-    bottom: 7px;
+    right: 45px;
+    bottom: 0;
   }
   .icon{
     float: right;
     position: relative;
     bottom: 20px;
-    right: 75px;
+    right: 108px;
   }
 }
 
@@ -250,7 +295,7 @@ body {
       overflow: hidden;
   }
   .jaz{
-    width: 55%;
+    width: 45%;
     position: relative;
     right: 10px;
     top: 3px;
@@ -258,14 +303,14 @@ body {
   .face{
     float: right;
     position: relative;
-    right: 15px;
+    right: 50px;
     bottom: 3px;
   }
   .icon{
     float: right;
     position: relative;
     bottom: 20px;
-    right: 65px;
+    right: 108px;
   }
 }
 
@@ -293,7 +338,7 @@ body {
     width:90%;
   }
   .jaz{
-    width: 60%;
+    width: 50%;
     position: relative;
     right: 10px;
     top: 3px;
@@ -301,80 +346,100 @@ body {
   .face{
     float: right;
     position: relative;
+    right: 35px;
+    bottom: 3px;
+  }
+  .icon{
+    float: right;
+    position: relative;
+    bottom: 20px;
+    right: 108px;
+  }
+}
+
+@media (max-width: 361px){
+  .jaz{
+    width: 45%;
+    position: relative;
     right: 10px;
+    top: 3px;
+  }
+  .face{
+    float: right;
+    position: relative;
+    right: 40px;
+    bottom: 5px;
+  }
+  .card__profile {
+    position: relative;
+    left: 20px;
+      height: 85px;
+      width: 85px;
+      border-radius: 50%;
+      overflow: hidden;
+  }
+  .icon{
+    float: right;
+    position: relative;
+    bottom: 20px;
+    right: 108px;
+  }
+}
+
+@media (max-width: 321px){
+  .content{
+    position: relative;
+    left: 17px;
+  }
+  .card__profile {
+    position: relative;
+    left: 20px;
+      height: 85px;
+      width: 85px;
+      border-radius: 50%;
+      overflow: hidden;
+  }
+  .jaz{
+    width: 50%;
+    position: relative;
+    right: 10px;
+    top: 3px;
+  }
+  .face{
+    float: right;
+    position: relative;
+    right: 40px;
+    bottom: 2px;
+  }
+  .icon{
+    float: right;
+    position: relative;
+    bottom: 20px;
+    right: 108px;
+  }
+}
+
+@media (max-width: 300px){
+  .content{
+    position: relative;
+    left: 33px;
+  }
+  .jaz{
+    width: 46%;
+    position: relative;
+    right: 10px;
+    top: 3px;
+  }
+  .face{
+    float: right;
+    position: relative;
+    right: 40px;
     bottom: 5px;
   }
   .icon{
     float: right;
     position: relative;
     bottom: 20px;
-    right: 52px;
-  }
-}
-
-@media (max-width: 361px){
-  .card__profile {
-    position: relative;
-    left: 20px;
-      height: 85px;
-      width: 85px;
-      border-radius: 50%;
-      overflow: hidden;
-  }
-  .icon{
-    float: right;
-    position: relative;
-    bottom: 20px;
-    right: 48px;
-  }
-}
-
-@media (max-width: 321px){
-  .card__profile {
-    position: relative;
-    left: 20px;
-      height: 85px;
-      width: 85px;
-      border-radius: 50%;
-      overflow: hidden;
-  }
-  .jaz{
-    width: 60%;
-    position: relative;
-    right: 10px;
-    top: 3px;
-  }
-  .face{
-    float: right;
-    position: relative;
-    right: 5px;
-    bottom: 10px;
-  }
-  .icon{
-    float: right;
-    position: relative;
-    bottom: 20px;
-    right: 40px;
-  }
-}
-
-@media (max-width: 300px){
-  .jaz{
-    width: 63%;
-    position: relative;
-    right: 10px;
-    top: 3px;
-  }
-  .face{
-    float: right;
-    position: relative;
-    right: 5px;
-    bottom: 10px;
-  }
-  .icon{
-    float: right;
-    position: relative;
-    bottom: 20px;
-    right: 25px;
+    right: 108px;
   }
 }
