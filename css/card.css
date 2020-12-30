@@ -315,6 +315,10 @@ body {
 }
 
 @media (max-width: 376px){
+  .content{
+    position: relative;
+    left: 50px;
+  }
   .card__profile {
     position: relative;
     left: 12px;
@@ -358,6 +362,10 @@ body {
 }
 
 @media (max-width: 361px){
+  .content{
+    position: relative;
+    left: 20px;
+  }
   .jaz{
     width: 45%;
     position: relative;
@@ -389,7 +397,7 @@ body {
 @media (max-width: 321px){
   .content{
     position: relative;
-    left: 17px;
+    left: 40px;
   }
   .card__profile {
     position: relative;
@@ -422,7 +430,7 @@ body {
 @media (max-width: 300px){
   .content{
     position: relative;
-    left: 33px;
+    left: 55px;
   }
   .jaz{
     width: 46%;
